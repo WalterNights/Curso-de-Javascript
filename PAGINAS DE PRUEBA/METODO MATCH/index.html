@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buscar y eliminar un texto de un textarea</h1>
+ 
+<form onsubmit="buscar();return false;">
+    <textarea id="ta">GNU/Linux es uno de los términos empleados para referirse a la combinación del núcleo o kernel libre similar a Unix denominado Linux con el sistema GNU. Su desarrollo es uno de los ejemplos más prominentes de software libre; todo su código fuente puede ser utilizado, modificado y redistribuido libremente por cualquiera bajo los términos de la GPL (Licencia Pública General de GNU, en inglés: General Public License) y otra serie de licencias libres.
+    </textarea>
+ 
+    <br>Buscar:<input type="text" name="search" id="search" value="gnu">
+ 
+    <br><input type="submit" value="Buscar y quitar">
+</form>
+<div id="coincidencias"></div>
+<script src="./prueba.js"></script>
+</body>
+</html>

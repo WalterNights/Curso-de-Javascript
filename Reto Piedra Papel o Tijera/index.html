@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>RETO PIEDRA, PAPEL O TIJERA</title>
+</head>
+<body>
+    <main class="grid">
+        <h1>VAMOS A JUGAR</h1>
+        <div class="main-content">
+            <h3 id="escoje">Escoje una opció</h3>
+                <div id="resultado-empate" class="resultado">
+                    <h1>EMPATE!</h1>
+                </div>
+                <div id="resultado-ganaste" class="resultado">
+                    <h1>GANASTE!</h1>
+                </div>
+                <div id="resultado-perdiste" class="resultado">
+                    <h1>PERDISTE!</h1>
+                </div>
+            <input type="button" id="piedra" class= "boton" value="piedra">
+            <input type="button" id="papel" class= "boton" value="papel">
+            <input type="button" id="tijeras" class= "boton" value="tijeras">
+            <div class="play-reset" id="play-reset">
+                <input type="button" id="play" class= "boton" value="play">
+                <input type="button" id="reset" class= "boton" value="Play Again">
+            </div>
+        </div>
+        <div id="opcionUsuario">
+            <img src="./Imagenes/Piedra-Usuario.png" id="opcionPiedra" class="seleccion">
+            <img src="./Imagenes/Papel-Usuario.png" id="opcionPapel" class="seleccion">
+            <img src="./Imagenes/Tijera-Usuario.png" id="opcionTijeras" class="seleccion">
+        </div>
+        <div id="opcionPc">
+            <img src="./Imagenes/Piedra-Pc.png" id="opcionPiedraPc" class="seleccion">
+            <img src="./Imagenes/Papel-Pc.png" id="opcionPapelPc" class="seleccion">
+            <img src="./Imagenes/Tijera-Pc.png" id="opcionTijerasPc" class="seleccion">
+        </div>
+    </main>
+    <script src="./retoSwitch.js"></script>
+</body>
+</html>

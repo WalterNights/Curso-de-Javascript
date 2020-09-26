@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Reto Función Constructora</title>
+</head>
+<body class="grid">
+    <header class="header">
+        <h1>FUCIÓN CONSTRUCTORA</h1>
+    </header>
+    <main class="main">
+        <div id="seleccion" class="seleccion">
+            <form action="">
+                <div> <label for="marca">
+                    <span>Selecciona la Marca.</span>
+                    <div>
+                        <input list="marcaHTML" id="textoMarca" name="marca" placeholder="Marca" required>
+                    </div>
+                        <datalist id="marcaHTML">
+                            <option value="Toyota"></option>
+                            <option value="Chevrolet"></option>
+                            <option value="Mazda"></option>
+                            <option value="Renault"></option>
+                            <option value="wolsvagen"></option>
+                        </datalist>
+                    </label>
+                </div>
+                <div> <label for="modelo">
+                    <span>Selecciona el Modelo.</span>
+                    <div>
+                        <input list="modeloHTML" id="textoModelo" name="modelo" placeholder="Modelo" required>
+                    </div>
+                        <datalist id="modeloHTML">
+                            <option value="classic"></option>
+                            <option value="Vintage"></option>
+                            <option value="Sport"></option>
+                            <option value="4x4"></option>
+                            <option value="Luxury"></option>
+                        </datalist>
+                    </label>
+                </div>
+                <div> <label for="year">
+                    <span>Selecciona el Año.</span>
+                    <div>
+                        <input list="yearHTML" id="textoYear" name="year" placeholder="Año" required>
+                    </div>
+                        <datalist id="yearHTML">
+                            <option value="1980"></option>
+                            <option value="1990"></option>
+                            <option value="2018"></option>
+                            <option value="2019"></option>
+                            <option value="2020"></option>
+                        </datalist>
+                    </label>
+                </div>
+            </form>
+            <div class="auto-manual">
+                <div class="auto-manual__titulo">
+                    <h1>TU AUTO:</h1>
+                </div>
+                <div class="caja__lista">
+                    <ul class="caja__lista--auto" id="listaAuto">
+                        <li>Marca:&nbsp;&nbsp;&nbsp;<a id ="marcaResultado" href="#">Agrega la marca.</a></li>
+                        <li>Modelo:&nbsp;&nbsp;&nbsp;<a id ="modeloResultado" href="#">Agrega el modelo.</a></li>
+                        <li>Año:&nbsp;&nbsp;&nbsp;<a id ="yearResultado" href="#">Agrega el año.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="resultado__random-box">
+            <div class="rr-text">
+                <p>AUTO:</p>
+            </div>
+            <div id="resultadoRandom" class="resultado-random">
+                <div><p>Marca:</p></div>
+                <div>
+                    <p id="remplazarMarca">Marca xxx</p>
+                </div>
+                <div><p>Modelo:</p></div>
+                <div>
+                    <p id="remplazarModelo">Modelo xxx</p>
+                </div>
+                <div><p>Año:</p></div>
+                <div>
+                    <p id="remplazarYear">Año xxx</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside class="sidebarLefth">
+        <div class="sidebar__content">
+            <div class="texto-sb">
+                <p class="txt-sb-p1">Tienes 2 metodos para generar tu Auto.</p><br>
+                <p class="txt-sb-p2">En el primer metodo puedes seleccionar manualmente las caracteristicas que deseas para tu auto, como marca, modelo y año.</p><br>
+                <p class="txt-sb-p3">El segundo metodo es, generando estas caracteristicas de manera aleatoria.</p>
+            </div>
+            <div>
+                <input type="button" id="botonRandom" class="boton-random" value="Random">
+            </div>
+        </div>
+    </aside>
+    <aside class="sidebarRight">
+        <div class="sidebar__right">
+            <img src="./Imagenes/Toyota Logo png.png" alt="">
+            <img src="./Imagenes/Chevrolet Logo png.png" alt="">
+            <img src="./Imagenes/Mazda Logo png.png" alt="">
+            <img src="./Imagenes/Renault Logo png.png" alt="">
+            <img src="./Imagenes/Volkswagen Logo png.png" alt="">
+        </div>
+    </aside>
+    <footer></footer>
+    <script src="./retoConstructor.js"></script>
+</body>
+</html>

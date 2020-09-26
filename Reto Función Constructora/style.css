@@ -1,0 +1,299 @@
+/* Seccion De La Configuración Principal */
+:root
+{
+    --color-fondo: #222222;
+    --color-fomdo-2: #f2f2f2;
+    --color-secundario: #333333;
+    --color-t1: white;
+    --color-t2: #444444;
+    --tamaño-h1-0: 2rem;
+    --tamaño-h1-1: 2.5rem;
+    --tamaño-h1-2: 4rem;
+    --tamaño-h1-3: 5rem;
+    --f-family-1: 'Bebas Neue';
+    --f-family-2: 'Open Sans';
+}
+ 
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+/* Seccion De La Malla Grid */
+
+.grid
+{
+    display: grid;
+    background-color: var(--color-fomdo-2);
+    height: 15vh;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2];
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+/* Seccion Del Header */
+
+.header
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-fondo);
+    border-bottom: black solid 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 12vh;
+    z-index: 2;
+    color: var(--color-t1);
+    font-family: var(--f-family-1);
+    font-size: var(--tamaño-h1-0);
+    grid-column: x0 / x3;
+    grid-row: y0 / y1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Seccion del SideBar de la Izquierda */
+
+.sidebarLefth
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vh;
+    height: 85vh;
+    grid-column: x0 / x1;
+    grid-row: y1 / y2;
+    justify-content: center;
+}
+
+.sidebar__content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.texto-sb
+{
+    /* background-color; */
+    width: 20vw;
+    padding: 20px;
+    font-size: 1.7rem;
+    color: var(--color-t2);
+    font-family: var(--f-family-2);
+}
+
+.txt-sb-p1
+{
+    text-align: center;
+}
+
+/* Seccion del SideBar de la Derecha */
+
+.sidebarRight
+{
+    display: flex;
+    width: 40vh;
+    grid-column: x2 / x3;
+    grid-row: y1 / y2;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sidebarRight img
+{
+    width: 7vw;
+    margin: 10px;
+}
+
+.sidebar__right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Seccion De la parte central Man */
+
+.main
+{
+    background-color: #ededed;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    /* border-right: orange solid 10px; */
+    width: 60vw;
+    padding: 30px;
+    margin-top: 20px;
+    z-index: 1;
+    grid-column: x1 / x2;
+    grid-row: y1 / y2;
+}
+
+/* Seccion Del Area de Seleccion y Opciones */
+
+.seleccion
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.seleccion form
+{
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.seleccion input
+{
+    width: 20vw;
+    height: 7vh;
+    background-color: var(--color-secundario);
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 2rem;
+    color: var(--color-t1);
+    font-family: var(--f-family-2);
+    /* font-weight: bold; */
+}
+
+::placeholder
+{
+    color: var(--color-t1);
+}
+
+.seleccion span
+{
+    font-size: var(--tamaño-h1-1);
+    font-family: var(--f-family-1);
+    color: var(--color-t2);
+}
+
+.auto-manual
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja__lista
+{
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    width: 30vw;
+    height: 40vh;
+    padding: 1px;
+    font-size: var(--tamaño-h1-1);
+    font-family: var(--f-family-1);
+}
+
+.caja__lista--auto
+{
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.caja__lista--auto a
+{
+    text-decoration: none;
+    color: var(--color-t1);
+}
+
+.caja__lista--auto a:hover
+{
+    cursor: default;
+}
+
+.caja__lista--auto li
+{
+    margin: 50px;
+    border-bottom: solid 1px var(--color-t1);
+    color: var(--color-t1);
+}
+
+.auto-manual__titulo h1
+{
+    font-size: var(--tamaño-h1-3);
+    color: var(--color-t2);
+    font-family: var(--f-family-1);
+    margin-bottom: 20px;
+}
+
+/* Seccion del Resultado Random Box */
+
+.resultado__random-box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rr-text
+{
+    font-size:var(--tamaño-h1-3);
+    color: var(--color-t2);
+    font-family: var(--f-family-1);
+    font-weight: bold;
+}
+
+.resultado-random
+{
+    display: flex;
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    width: 80%;
+    height: 60px;
+    padding: 15px;
+    font-size: var(--tamaño-h1-1);
+    font-family: var(--f-family-1);
+    color: var(--color-t1);
+    /* font-weight: bold; */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.remplazar-marca
+{
+    list-style: none;
+    border-bottom: solid 1px var(--color-t2);
+}
+
+#remplazarMarca, #remplazarModelo, #remplazarYear
+{
+    font-size: var(--tamaño-h1-0);
+    font-family: var(--f-family-1);
+}
+
+/* Seccion Del Boton Random */
+
+.boton-random
+{
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    border: none;
+    width: 12vw;
+    height: 8vh;
+    font-family: var(--f-family-1);
+    font-weight: bold;
+    font-size: var(--tamaño-h1-1);
+    color: var(--color-t1);
+    transition: 0.5s;
+    background: var(--color-secundario);
+}
+
+.boton-random:hover
+{
+    transform: scale(1.0);
+    opacity: 0.7;
+}
